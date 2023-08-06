@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./game.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="glass"></div>
+        <div id="ground">
+            <div id="vs">컴퓨터 VS 유저</div>
+            <div id="jgp">
+                <ul class="cole"> 
+                    <!-- 폰트 픽셀식으로 변경 -->
+                    <li>S<div class="sbo">0</div></li>
+                    <li>B<div class="sbo">0</div></li>
+                    <li>O<div class="sbo">0</div></li>
+                </ul>
+                <!-- 이름 추가 -->
+                <div id="name">
+                    <p>컴퓨터</p>
+                    <p>유저</p>
+                </div>
+                <div class="point">
+                    <ul>
+                        <li>
+                            <div>1</div>
+                            <div class="cho">0</div>
+                            <div class="mal">0</div>
+                        </li>
+                        <li>
+                            <div>2</div>
+                            <div class="cho">0</div>
+                            <div class="mal">0</div>
+                        </li>
+                        <li>
+                            <div>3</div>
+                            <div class="cho">0</div>
+                            <div class="mal">0</div>
+                        </li>
+                        <li>
+                            <div>4</div>
+                            <div class="cho">0</div>
+                            <div class="mal">0</div>
+                        </li>
+                        <li>
+                            <div>5</div>
+                            <div class="cho">0</div>
+                            <div class="mal">0</div>
+                        </li>
+                        <li>
+                            <div>6</div>
+                            <div class="cho">0</div>
+                            <div class="mal">0</div>
+                        </li>
+                        <li>
+                            <div>7</div>
+                            <div class="cho">0</div>
+                            <div class="mal">0</div>
+                        </li>
+                        <li>
+                            <div>8</div>
+                            <div class="cho">0</div>
+                            <div class="mal">0</div>
+                        </li>
+                        <li>
+                            <div>9</div>
+                            <div class="cho">0</div>
+                            <div class="mal">0</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="jsp">0:0</div>
+            </div>
+            <div class="count">1회초</div>
+            <div id="mungu"></div>
+            <div id="base">
+                <ul>
+                    <li><div class="roo"></div></li>
+                    <li><div class="roo"></div></li>
+                    <li><div class="roo"></div></li>
+                    <li><div class="roo"></div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="click">
+            <button class="twins" onclick="strikebtn()">스트라이크</button>
+            <button class="twins" onclick="ballbtn()">보오오오올</button>
+            <button class="Lg" onclick="hitbtn()">휘두르기</button>
+            <button class="Lg" onclick="stopbtn()">가만히 있기</button>
+        </div>
+    </div>
+</body>
+</html>

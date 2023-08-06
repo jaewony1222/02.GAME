@@ -1,0 +1,206 @@
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li { list-style: none;}
+button{
+    font-family: 'Galmuri7';
+}
+
+
+body {
+    /*갈무리맨*/
+    font-family: 'Galmuri7';
+    background: url(./image/background.png) center bottom no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+#wrap {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+#glass{
+    border-radius: 10px;
+    width: 1040px;
+    height: 788px;
+    background: #000;
+    position: absolute;
+    bottom: 118px;
+    z-index: 99;
+    opacity: 0;
+}
+#glass.show{
+    transition: opacity 1s;
+    opacity: 1;
+}
+#glass.show2{
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+#ground {
+    /*닌텐도 이미지*/
+    background-image: url(./image/마구마구.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 1040px;
+    height: 788px;
+
+    border: 5px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+#vs {
+    width: 17%;
+    line-height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    background: #ccc;
+    opacity: 0.8;
+    color: black;
+    border-radius: 0 0 40% 0;
+    font-size: 17px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;   
+}
+#jgp { 
+    /* 너비 늘림. */
+    width: 48%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    background: #ccc;
+    opacity: 0.8;
+    color: black;
+    border-radius: 0 0 20% 20%;
+}
+/* 줄추가 */
+#jgp ul {
+    border-right: 2px solid black;
+    padding-right: 15px;
+}
+#jgp ul:nth-child(1) {
+    font-size: 30px;
+}
+#jgp ul li {
+    display: flex;
+}
+.cole li:nth-child(1) {
+    color: yellow;
+}
+.cole li:nth-child(2) {
+    color: green;
+}
+.cole li:nth-child(3) {
+    color: tomato;
+}
+.count {
+    width: 16%;
+    line-height: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    background: #ccc;
+    opacity: 0.8;
+    color: black;
+    border-radius: 0 0 0 40%;
+    font-size: 20px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+#base .roo{
+    /* 가로랑 세로를 똑같이 한뒤 돌리삼 */
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    transform: translate(-50%,-50%) rotate(45deg);
+    opacity: 0.5;
+}
+#base ul {
+    position: relative;
+    height: 500px;
+    width: 500px;
+}
+#base li:nth-child(1) {
+    position: absolute;
+    top: 200px;
+    right: -30px;
+}
+#base li:nth-child(2) {
+    position: absolute;
+    top: 100px;
+    left: 250px;
+}
+#base li:nth-child(3) {
+    position: absolute;
+    top: 200px;
+}
+#base li:nth-child(4) {
+    position: absolute;
+    top: 350px;
+    left: 250px;
+}
+.click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 1040px;
+    border: 3px solid black;
+    background: #eee;
+    border-radius: 10px 10px 0 0;
+}
+.click button {
+    width: 400px;
+    line-height: 72px;
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+.click button:not(:nth-child(odd)){
+    border-left: 3px solid black;
+    ;
+}
+.point ul {
+    display: flex;
+}
+.point li {
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+    padding-bottom: 20px;
+    margin-right: 5px;
+}
+.jsp {
+    font-size: 30px;
+}
+#name {
+    text-align: center;
+    margin-top: 14px;
+}
+#name p {
+    padding: 6px 0;
+}
+.Lg {
+    display: none;
+}
+#mungu {
+    color: lightgoldenrodyellow;
+    font-size: 20px;
+}
